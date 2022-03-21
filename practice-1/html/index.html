@@ -6,44 +6,95 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>[hue-internship]-Uyen-Figma</title>
-  <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
   <!--------------------Header ------------------>
-  <header id="header">
+  <header class="header container">
     <!------nav ---------->
-    <nav class="nav">
-      <p class="logo">Productly</p>
-      <ul class="nav_li">
-        <li>Product</li>
-        <li>Customers</li>
-        <li>Pricng</li>
-        <li>Resources</li>
-        <li><input type="button" class="sign_in" value="Sign in"></li>
-        <li><input type="button" class="sign_up" value="Sign up"></li>
-      </ul>
+    <nav class="header__nav">
+      <img src="../imgs/logo.png" class="haeder_nav--logo" alt="logo">
+      <div class="header__nav--right">
+        <ul class="header__nav--list">
+          <li>Product</li>
+          <li>Customers</li>
+          <li>Pricng</li>
+          <li>Resources</li>
+        </ul>
+        <div class="header__nav--btn">
+          <a href="#" class="btn btn-white text-btn">Sign in</a>
+          <a href="#" class="btn btn-orange text-btn">Sign up</a>
+        </div>
+      </div>
     </nav>
     <!------header body------->
-    <h1>The Design Thinking superpowers</h1>
-    <p>Tools, tutorials, design and innovation experts,all in one place! The most intuitive way to imagine your next user experience.</p>
-    <p class="started">Get started</p>
-    <p class="video">Watch the video</p>
+    <div class="header__banner">
+      <div class="header__banner-content">
+        <h1>The Design Thinking superpowers</h1>
+        <p>Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
+        <div class="header__banner-btn">
+          <button class="btn btn-orange text-btn">Get started</button>
+          <img class="icon" src="../imgs/Triangle Copy 6.svg" alt="">  <a class="header__banner-link sm">Watch the video</a>
+        </div>
+      </div>
+      <div class="header__banner--picture">
+        <img src="../imgs/Image.png" alt="">
+      </div>
+    </div>
   </header>
+  <main>
+    <h2>We design tools to unveil your superpowers</h2>
+    <div class="list">
+      <div class="list__item">
+        <div class="list__item--header"></div>
+        <div class="list__item--content">
+            <h3>First click tests</h3>
+            <p>While most people enjoy casino gambling,</p>
+        </div>
+      </div>
+      <div class="list__item">
+        <div class="list__item--header"></div>
+        <div class="list__item--content">
+            <h3>First click tests</h3>
+            <p>While most people enjoy casino gambling,</p>
+        </div>
+      </div>
+      <div class="list__item">
+        <div class="list__item--header"></div>
+        <div class="list__item--content">
+            <h3>First click tests</h3>
+            <p>While most people enjoy casino gambling,</p>
+        </div>
+      </div>
+      <div class="list__item">
+        <div class="list__item--header"></div>
+        <div class="list__item--content">
+            <h3>First click tests</h3>
+            <p>While most people enjoy casino gambling,</p>
+        </div>
+      </div>
+    </div>
+  </main>
   <!---------------------Footer--------------------->
   <footer id="footer">
-    <p class="logo">Productly</p>
-    <div class="links">
-      <ul>
-        <li>Quick Links</li>
+    <div class="footer__content">
+      <img src="../imgs/Bitmap.png" alt="">
+      <h2 class="footer__content--title">Productly</h2>
+    </div>
+    <div class="footer__content">
+      <h2 class="footer__content--title">Productly</h2>
+      <ul class="footer__content--ingredients">
+        <li><a href="javascript:void(0)">Quick Links</a></li>
         <li>About Us</li>
         <li>Blog</li>
         <li>Contact</li>
         <li>FAQ</li>
       </ul>
     </div>
-    <div class="stuff">
-      <ul>
+    <div class="footer__content">
+      <h2 class="footer__content--title">Productly</h2>
+      <ul class="footer__content--ingredients">
         <li>Legal Stuff</li>
         <li>Disclaimer</li>
         <li>Financing</li>
@@ -51,8 +102,9 @@
         <li>Term of Service</li>
       </ul>
     </div>
-    <div class="sign_up_form">
-      <ul>
+    <div class="footer__content">
+      <h2 class="footer__content--title">Productly</h2>
+      <ul class="footer__content--ingredients">
         <li>knowing you're always on <br> the best energy deal.</li>
         <li> <input type="number" class="phone_number" placeholder="Enter your phone number" /></li>
         <li> <input type="button" class="sun" value="Sign up Now" /></li>

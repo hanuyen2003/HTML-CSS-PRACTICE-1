@@ -1,26 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --primary-color: #ff9900;
+  --secondary-color: #173a56;
+  --dark-color: #2f281e;
+  --small-color: #544837;
+  --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+}
+
 * {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--small-color);
   line-height: 1.6;
 }
-#header {
-  padding-top: 12px;
-  padding-bottom: 60px;
+
+ul {
+  list-style-type: none;
 }
-#header .nav {
-  top: 0;
-  position: relative;
-  padding: 17px 90px;
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+/* Header nav */
+.header__nav {
+  padding: 30px 0px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-#header .nav .logo p {
-  font-weight: bold;
-  font-size: 30px;
-  color: blue;
-}
-#header .nav_li {
+.header__nav--right {
   display: flex;
+  align-items: center;
+}
+.header__nav--list {
+  display: flex;
+  padding-right: 40px;
+}
+.haeder_nav--logo {
+  width: 187px;
+  height: 32px;
+}
+.header__nav--list li {
+  padding-left: 15px;
+}
+.header__nav--btn a {
+  margin-left: 14px;
+}
+.header__banner {
+  display: flex;
+  min-height: 500px;
+}
+.header__banner-btn {
+  display: flex;
+}
+.header__banner-content h1 {
+  font-weight: 700;
+  font-size: 44px;
+  width: 520px;
+  line-height: 54px;
+  color: var(--dark-color);
+  padding-bottom: 30px;
+}
+.header__banner-content p {
+  width: 400px;
+  line-height: 28px;
+  padding-bottom: 45px;
+}
+.icon {
+  width: 20px;
+  height: 17px;
+}
+.header__banner-btn {
+  display: flex;
+  align-items: center;
+}
+.header__banner-btn button {
+  margin-right: 30px;
+  padding: 15px 41px;
+}
+.header__banner-btn a {
+  text-decoration: underline;
+  font-weight: 600;
+}
+.main h2 {
+  text-align: center;
 }
