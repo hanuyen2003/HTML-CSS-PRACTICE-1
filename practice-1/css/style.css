@@ -106,6 +106,35 @@ img {
   text-decoration: underline;
   font-weight: 600;
 }
-.main h2 {
-  text-align: center;
+
+.list {
+  display: flex;
+  min-height: 390px;
+  transform: rotate(180deg);
+}
+
+.list-group {
+  background: linear-gradient(
+    179.61deg,
+    rgba(255, 229, 210, 0.629261) 0.33%,
+    rgba(10, 8, 6, 0) 99.67%
+  );
+  transform: rotate(180deg);
+}
+.list__item--icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 19px;
+}
+.violet {
+  background-color: #7752be;
+}
+.blue {
+  background: #4dadf7;
+}
+.yellow {
+  background: #fab005;
+}
+.red {
+  background: #f03e3d;
 }
